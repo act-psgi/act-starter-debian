@@ -3,10 +3,10 @@ export REPOSITORY=https://github.com/HaraldJoerg/Act.git
 export BRANCH=act-two
 
 # A place for the software.  Git will add /Act to the path.
-export CHECKOUT=/home/haj/opt
+export CHECKOUT=/home/vagrant/opt
 
 # A place for the data
-export ACTHOME=/home/haj/var/opt/Act
+export ACTHOME=/home/vagrant/var/opt/Act
 
 # Database user (all databases) and password
 export DBUSER=act
