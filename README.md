@@ -15,7 +15,7 @@ installation which allows to hack on Act and to inspect the results
 on your own development machine.
 
 I intend to keep it in synch with the active branches (right now:
-act-two) in my fork of Act at https://github.com/HaraldJoerg/Act.
+evolution) in my fork of Act at https://github.com/HaraldJoerg/Act.
 It may work with other forks, too.
 
 Installations created in this way are _not_ meant for production!
