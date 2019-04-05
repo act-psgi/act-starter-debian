@@ -19,7 +19,6 @@
 createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER act
 createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER acttest
 createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER actwiki
-psql     --username=$DBUSER -l
 
 cd $CHECKOUT/Act
 bin/dbinit | psql -U $DBUSER act
