@@ -18,15 +18,29 @@ test_passwd = [% dbpass %]
 pg_dump     = 1
 dump_file   = /tmp/dbdump
 
+# Required for waterkip's fork preparing dockerization.
+# They are in the code, but missing from everywhere else.
+# If they aren't defined, there is a warning per request
+# for each variable (A feature of AppConfig).
+# Note that defining 'localhost' as the host name will
+# change the database driver's protocol from "local" to
+# "host".
+version_check = 0
+host = 0
+
 [email]
 sendmail    = /usr/sbin/sendmail
 test        = 0
-sender_address = tester@localhost
+sender_address = root@localhost
 
 [wiki]
 dbname      = actwiki
 dbuser      = [% dbuser %]
 dbpass      = [% dbpass %]
+
+# Required for waterkip's fork preparing dockerization,
+# see above for details.
+dbhost = 0
 
 [payment]
 open      = 0
@@ -40,3 +54,8 @@ plugin = Fake
 [flickr]
 # see http://www.flickr.com/services/api/
 apikey  = 0123456789ABCDEF0123456789ABCDEF
+
+# These are required for use by by Crypt::Eksblowfish.
+[bcrypt]
+cost = 8
+salt = HavelockVetinari
