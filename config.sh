@@ -1,6 +1,6 @@
 # Where to get the software from
 export REPOSITORY=https://github.com/HaraldJoerg/Act.git
-export BRANCH=act-two
+export BRANCH=evolution
 
 # The user running the tests.
 # Depending on the setup, this might be yourself, 'vagrant' (as on a

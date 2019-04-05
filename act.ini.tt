@@ -54,8 +54,3 @@ plugin = Fake
 [flickr]
 # see http://www.flickr.com/services/api/
 apikey  = 0123456789ABCDEF0123456789ABCDEF
-
-# These are required for use by by Crypt::Eksblowfish.
-[bcrypt]
-cost = 8
-salt = HavelockVetinari
