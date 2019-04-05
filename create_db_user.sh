@@ -18,7 +18,7 @@
 
 . ./config.sh
 
-MD5PASS=`perl -MDigest::MD5 -e "print q(md5) . Digest::MD5::md5_hex($ENV{DBPASS} . $ENV{DBUSER})"`
+MD5PASS=`perl -MDigest::MD5 -e 'print q(md5) . Digest::MD5::md5_hex($ENV{DBPASS} . $ENV{DBUSER})'`
 
 SQL="CREATE ROLE \"$DBUSER\"
 LOGIN ENCRYPTED PASSWORD '$MD5PASS'
