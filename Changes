@@ -1,0 +1,14 @@
+Revision history for the toolkit act-starter-debian
+
+0.00_02 2019-04-06 No more Bcrypt params in act,ini
+
+ - The Bcrypt parameters in act.ini which have been
+   introduced in the psgi branch in 2011 are no
+   longer needed in https://github.com/HaraldJoerg/Act
+   (branch "evolution", as of tag eliminate_bcrypt_params).
+   Therefore, they could be deleted from the provisioning.
+
+0.00_01 2019-04-03 New GitHub repository
+
+ - Unreleased - there's nowhere to release it to
+ - Announced to https://wiki.perlcon.eu
