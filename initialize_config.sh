@@ -18,6 +18,8 @@
 
 . ./config.sh
 
+mkdir --parents $ACTHOME/conf
+
 # You have tpage because you've installed the Perl modules, right?
 tpage --define dbuser="$DBUSER" --define dbpass="$DBPASS" \
       --define conference="$CONFERENCE" \

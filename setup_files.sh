@@ -35,11 +35,6 @@ mkdir $ACTHOME/photos
 # Create the directory for TT compiled templates
 mkdir --parents $ACTHOME/var
 
-# Create the initial configuration file
-mkdir --parents $ACTHOME/conf
-cp $CHECKOUT/Act/eg/conf/act.ini $ACTHOME/conf/act.ini
-
-
 # Create a conference
 mkdir --parents $ACTHOME/actdocs
 mkdir --parents $ACTHOME/wwwdocs
