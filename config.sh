@@ -19,9 +19,9 @@ export ACTHOME=/home/$ACTUSER/var/opt/Act
 export DBUSER=act
 export DBPASS=act123
 
-# The name of the sample conference
-export CONFERENCE=demo
-
 # Per default, run cpanm without tests (saves several minutes).
 # Comment this out if you want to run the tests.
 export CPANM_NOTEST=--notest
+
+# Which conferences to pull
+export CONFERENCES=tpc-2018-glasgow

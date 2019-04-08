@@ -8,7 +8,7 @@
 # Usage
 # ------
 # Supply the database user in the configuration file config.sh, then
-# run this procedure as with root privileges.
+# run this procedure with root privileges.
 #
 # Notes
 # -----

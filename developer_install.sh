@@ -36,3 +36,6 @@ sh ./initialize_config.sh
 
 # Step 8: Create databases and initialize tables
 sh ./initialize_db.sh
+
+# Step 9: Use existing conferences for demonstration
+perl ./pull-conferences.pl
