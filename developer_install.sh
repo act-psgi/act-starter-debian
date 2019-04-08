@@ -16,20 +16,20 @@ sudo apt-get --yes --quiet update
 sudo apt-get --yes --quiet upgrade
 
 # Step 2: Install system modules
-sudo sh ./install_packages.sh
+sudo -E sh ./install_packages.sh
 
 # Step 3: Fetch Act and create the directory structure
 sh ./setup_files.sh
 
 # Step 4: Install the perl libraries (to the system)
-sudo sh install_perl_modules.sh
+sudo -E sh install_perl_modules.sh
 
 # Step 5: Create the act database user
-sudo -u postgres sh ./create_db_user.sh
+sudo -E -u postgres sh ./create_db_user.sh
 
 # Step 6: Open local PostgreSQL connections for act
-sudo perl ./patch_pg_hba.pl "$DBUSER"
-sudo service postgresql restart
+sudo -E perl ./patch_pg_hba.pl "$DBUSER"
+sudo -E service postgresql restart
 
 # Step 7: Create initial act.ini files
 sh ./initialize_config.sh

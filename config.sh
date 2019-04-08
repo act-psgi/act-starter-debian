@@ -3,11 +3,15 @@ export REPOSITORY=https://github.com/HaraldJoerg/Act.git
 export BRANCH=evolution
 
 # The user running the tests.
+
 # Depending on the setup, this might be yourself, 'vagrant' (as on a
-# Vagrant Debian box), 'ubuntu' (as on a Vagrant Ubuntu box).
-# Don't use $USER: Parts of the scripts run under sudo, where
-# $USER will be root.
-export ACTUSER=vagrant
+# Vagrant Debian box), 'ubuntu' (as on a Vagrant Ubuntu box).  Note
+# that the procedures running with root privileges will have "root" as
+# their value for $USER, so we prevent _overwriting_ an existing value
+# for $ACTUSER.
+if [ -z "$ACTUSER" ]
+then export ACTUSER=$USER
+fi
 
 # A place for the software.  Git will add /Act to the path.
 export CHECKOUT=/home/$ACTUSER/opt
