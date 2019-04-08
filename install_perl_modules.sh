@@ -34,3 +34,6 @@ cpanm $CPANM_NOTEST --installdeps .
 
 # This isn't a dependency, but we want the tests
 cpanm $CPANM_NOTEST Test::Pod
+
+# This is for pulling conferences
+cpanm $CPANM_NOTEST Archive::Zip
