@@ -24,4 +24,3 @@ cd $CHECKOUT/Act
 bin/dbinit | psql -U $DBUSER act
 bin/dbinit | psql -U $DBUSER acttest
 wiki-toolkit-setupdb --type postgres --name actwiki --user $DBUSER --pass $DBPASS
-date
