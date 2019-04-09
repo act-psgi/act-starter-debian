@@ -1,5 +1,5 @@
 [general]
-full_uri  = http://localhost:5000/testconference/
+full_uri  = http://localhost:5000/demo/
 languages = en
 default_language = en
 default_country  = en
@@ -20,7 +20,7 @@ open = 1
 
 [talks]
 submissions_open = 0
-submissions_notify_address = tester@localhost
+submissions_notify_address = [% actuser %]@localhost
 submissions_notify_language = en
 notify_accept = 1
 edition_open = 0

@@ -30,6 +30,7 @@ git checkout $BRANCH
 mkdir --parents $ACTHOME
 ln --symbolic $CHECKOUT/Act/templates $ACTHOME/templates
 ln --symbolic $CHECKOUT/Act/po        $ACTHOME/po
+ln --symbolic $CHECKOUT/Act/wwwdocs   $ACTHOME/wwwdocs
 mkdir $ACTHOME/photos
 
 # Create the directory for TT compiled templates

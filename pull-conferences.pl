@@ -30,7 +30,7 @@ my $url_suffix = "archive/${branch}.zip";
 my $act_home   = $ENV{ACTHOME};
 
 
-my @conferences = split /\s+/, $ENV{CONFERENCES};
+my @conferences = @ARGV;
 CONFERENCE:
 for my $conference (@conferences) {
     my $filename = "$tempdir/${conference}.zip";

@@ -26,6 +26,3 @@ export DBPASS=act123
 # Per default, run cpanm without tests (saves several minutes).
 # Comment this out if you want to run the tests.
 export CPANM_NOTEST=--notest
-
-# Which conferences to pull
-export CONFERENCES=tpc-2018-glasgow
