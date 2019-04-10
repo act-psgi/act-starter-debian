@@ -25,5 +25,5 @@ tpage --define dbuser="$DBUSER" --define dbpass="$DBPASS" \
       --define conference="demo" \
       --define acthome="$ACTHOME" \
       act.ini.tt > $ACTHOME/conf/act.ini
-tpage --define acthome="$ACTHOME" actuser="$ACTUSER" \
+tpage --define acthome="$ACTHOME" --define actuser="$ACTUSER" \
       conf.act.ini.tt > $ACTHOME/actdocs/demo/conf/act.ini
