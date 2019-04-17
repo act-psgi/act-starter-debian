@@ -15,7 +15,7 @@ installation which allows to hack on Act and to inspect the results
 on your own development machine.
 
 I intend to keep it in synch with the active branches (right now:
-evolution) in my fork of Act at https://github.com/HaraldJoerg/Act.
+stage0) in my fork of Act at https://github.com/HaraldJoerg/Act.
 It may work with other forks, too.
 
 Installations created in this way are _not_ meant for production!
@@ -49,9 +49,6 @@ Have fun!
 
 ## Known issues
 
-* Yet to be investigated: The _first_ run of `t/04template.t` fails at
-  test number 12.  Run the same test again - and it passes.  Weird,
-  isn't it?
 * The fact that the testsuite passes doesn't imply that the
   installation actually works.  If it doesn't, then this indicates
   that a) the installation doesn't work, and b) the tests might need

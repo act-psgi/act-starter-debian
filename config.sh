@@ -1,6 +1,6 @@
 # Where to get the software from
 export REPOSITORY=https://github.com/HaraldJoerg/Act.git
-export BRANCH=evolution
+export BRANCH=stage0
 
 # The user running the tests.
 

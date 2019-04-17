@@ -1,5 +1,10 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_03 2019-04-17 Default branch is now stage0
+
+ - From now on, this repository will always point to
+   the latest "release" of Act evolution.
+
 0.00_02 2019-04-06 No more Bcrypt params in act,ini
 
  - The Bcrypt parameters in act.ini which have been
