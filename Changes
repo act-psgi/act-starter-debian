@@ -1,5 +1,15 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_04 2019-04-18 Fixed broken test & doc update
+
+ - Due to a bad change which wasn't intended to be committed
+   the Act test t/02config.t reported:
+   "not ok 40 - compiled templates directory exists!".
+   Reported by Paul Cochrane (thanks!).
+   This is now fixed by using the default directory.
+ - Added a hint that the homepage of the plackup server
+   has no content (also reported by Paul Cochrane).
+
 0.00_03 2019-04-17 Default branch is now stage0
 
  - From now on, this repository will always point to

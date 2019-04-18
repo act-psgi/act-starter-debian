@@ -40,10 +40,14 @@ When the procedure is done without errors:
 
 When the testsuite passes, run from the same directory:
 
-  `plackup -Ilib app.psgi`
+  `plackup --access-log=/tmp/access-log`
 
 and point a browser to http://localhost:5000/demo. (or whatever you've
 configured as the name for your conference).
+
+_Note:_ There is no content (yet) behind the "homepage"
+http://localhost:5000/ advertised by plackup after its startup.  It just
+returns the default plackup text "Not found".
 
 Have fun!
 
