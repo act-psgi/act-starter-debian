@@ -51,9 +51,32 @@ returns the default plackup text "Not found".
 
 Have fun!
 
+## Importing other conferences
+
+The repository also contains a Perl program which allows to import
+conference data from https://github.com/Act-Conferences like this:
+
+  `perl pull-conferences.pl tpc-2018-glasgow`
+
+Note that this is just importing a snapshot (a git archive), not
+cloning the repository.  So you can't damage existing conferences by
+accidentally typing `git push` into the wrong xterm.
+
+You then need to add the imported conference to
+`~/var/opt/Act/conf/act.ini`.  Add it to the second line like this:
+
+   `conferences = demo tpc-2018-glasgow`
+
+Then restart the web server and you can see the content from the
+Glasgow conference at http://localhost:5000/tpc-2018-glasgow.  Of
+course, the database is missing, so there's no schedule, no users, no
+wiki, etc.
+
 ## Known issues
 
 * The fact that the testsuite passes doesn't imply that the
   installation actually works.  If it doesn't, then this indicates
   that a) the installation doesn't work, and b) the tests might need
   to be extended.
+* For conferences which use a customized login template, you can't
+  successfully register and login in your local installation.
