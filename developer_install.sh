@@ -37,6 +37,9 @@ sh ./initialize_config.sh
 # Step 8: Create databases and initialize tables
 sh ./initialize_db.sh
 
+# Step 9: Install the Act manuals
+sh ./install_manual.sh
+
 # From here on, you can:
 # - Run a webserver:
 #    $ . ./config.sh

@@ -35,7 +35,8 @@ Installations created in this way are _not_ meant for production!
 
 When the procedure is done without errors:
 1. Setup your own environment: `. ./config.sh`
-2. Change to the Act checkout directory and run `prove -lv`.
+2. Change to the Act checkout directory
+3. Run `prove -lv`.
 3. Enjoy.
 
 When the testsuite passes, run from the same directory:
@@ -44,6 +45,9 @@ When the testsuite passes, run from the same directory:
 
 and point a browser to http://localhost:5000/demo. (or whatever you've
 configured as the name for your conference).
+
+The Act manual, updated for this fork, is available at
+http://localhost:5000/manual/Manual.html.
 
 _Note:_ There is no content (yet) behind the "homepage"
 http://localhost:5000/ advertised by plackup after its startup.  It just
@@ -72,8 +76,17 @@ Glasgow conference at http://localhost:5000/tpc-2018-glasgow.  Of
 course, the database is missing, so there's no schedule, no users, no
 wiki, etc.
 
+## Updating the HTML view of the Act manual
+
+After updating the Act software which includes the manual, the HTML
+view of the manual can be re-created by changing into this package's
+directory and running
+
+   `sh install_manual.sh`
+
 ## Known issues
 
+* You need to `cd` into their directory for these procedures to work.
 * The fact that the testsuite passes doesn't imply that the
   installation actually works.  If it doesn't, then this indicates
   that a) the installation doesn't work, and b) the tests might need

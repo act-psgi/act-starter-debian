@@ -1,5 +1,10 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_05 2019-04-29 Install the Act manual
+
+ - The Act manual is now created during installation
+   and made available at http://localhost:5000/manual/Manual.html.
+
 0.00_04 2019-04-18 Fixed broken test & doc update
 
  - Due to a bad change which wasn't intended to be committed
