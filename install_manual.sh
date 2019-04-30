@@ -16,7 +16,7 @@
 . ./config.sh
 
 # Make the style sheet available
-if [ ! -e $ACTHOME/wwwdocs/mandocs ]
+if [ ! -h $ACTHOME/wwwdocs/mandocs ]
 then ln --symbolic $CHECKOUT/Act/mandocs $ACTHOME/wwwdocs/mandocs
 fi
 
