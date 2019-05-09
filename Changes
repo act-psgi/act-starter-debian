@@ -1,7 +1,8 @@
 Revision history for the toolkit act-starter-debian
 
-0.00_05 2019-04-29 Install the Act manual
+0.00_05 2019-05-09 Adapting to stage1
 
+ - The default branch is now stage1 at https://github.com/HaraldJoerg/Act
  - The Act manual is now created during installation
    and made available at http://localhost:5000/manual/Manual.html.
 
