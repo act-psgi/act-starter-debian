@@ -27,3 +27,4 @@ apt-get install --quiet --yes postgresql-server-dev-all
 apt-get install --quiet --yes libpng-dev
 apt-get install --quiet --yes libjpeg-dev
 apt-get install --quiet --yes cpanminus
+apt-get install --quiet --yes libexpat1-dev
