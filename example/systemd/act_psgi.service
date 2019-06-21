@@ -1,0 +1,16 @@
+[Service]
+WorkingDirectory=/home/act/opt/Act
+Environment=NO_CACHE=1
+ExecStart=plackup -p 4000 --no-default-middleware -s Starman --workers 10 /home/act/opt/Act/app.psgi
+Type=simple
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=act_psgi
+User=act
+Group=act
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
+

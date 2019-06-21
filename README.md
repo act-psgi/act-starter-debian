@@ -93,3 +93,43 @@ directory and running
   to be extended.
 * For conferences which use a customized login template, you can't
   successfully register and login in your local installation.
+
+## Setup the rest of the system
+
+If you want to run a proper ACT instance, you will need to add a few more
+things
+
+### DNS
+
+Point a DNS entry to your server
+
+### Init system: system.d
+
+Take a look at `example/systemd/act_psgi.service`, adapt the paths to your
+setup and copy the file to `/etc/systemd/system/act_psgi.service`
+
+* `systemd daemon-reload`
+* `systemctl start act_psgi`
+* `systemctl enable act_psgi`
+
+### Frontend proxy: nginx
+
+`apt install nginx`
+
+Take a look at `example/nginx/your-act.example.com.conf`, adapt `server_name`
+and copy the file to `/etc/nginx/your-act.example.com.conf` on your host.
+
+Restart nginx: `systemd nginx restart`
+
+#### https
+
+* `apt-get install certbot python-certbot-nginx`
+* `certbot --nginx`
+* Answer all the questions, defaults should be fine
+* `systemctl restart nginx`
+* See `example/nginx/your-act.example.com-ssl.conf`
+
+### Mailer: exim
+
+TODO
+
