@@ -4,7 +4,7 @@ languages = en
 default_language = en
 default_country  = en
 name_en   = Testconference
-timezone  = UTC
+timezone  = Europe/Paris
 
 [registration]
 open = 1
@@ -27,7 +27,7 @@ edition_open = 0
 show_schedule = 0
 durations = 20 40 120
 start_date = 2099-01-01T00:00:00
-end_date   = 2099-12-31T23:59:59
+end_date   = 2099-01-03T23:59:59
 #levels = 4
 #languages = fr en
 
