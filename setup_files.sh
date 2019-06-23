@@ -28,10 +28,20 @@ git checkout $BRANCH
 
 # Make the data directory
 mkdir --parents $ACTHOME
-ln --symbolic $CHECKOUT/Act/templates $ACTHOME/templates
-ln --symbolic $CHECKOUT/Act/po        $ACTHOME/po
-ln --symbolic $CHECKOUT/Act/wwwdocs   $ACTHOME/wwwdocs
-mkdir $ACTHOME/photos
+
+if [ ! -h $ACTHOME/templates ]
+then ln --symbolic $CHECKOUT/Act/templates $ACTHOME/templates
+fi
+
+if [ ! -h $ACTHOME/po ]
+then ln --symbolic $CHECKOUT/Act/po        $ACTHOME/po
+fi
+
+if [ ! -h $ACTHOME/wwwdocs ]
+then ln --symbolic $CHECKOUT/Act/wwwdocs   $ACTHOME/wwwdocs
+fi
+
+mkdir --parents $ACTHOME/photos
 
 # Create the directory for TT compiled templates
 mkdir --parents $ACTHOME/var
