@@ -1,5 +1,10 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_06 2019-10-07 Switching to act-testing repositories
+
+ - The fork has been moved to https://github.com/act-testing/Act.
+   The old address still works but should be phased out.
+
 0.00_05 2019-05-09 Adapting to stage1
 
  - The default branch is now stage1 at https://github.com/HaraldJoerg/Act
