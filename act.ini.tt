@@ -12,7 +12,7 @@ name        = act
 dsn         = dbi:Pg:dbname=$(database_name)
 user        = [% dbuser %]
 passwd      = [% dbpass %]
-test_dsn    = dbi:Pg:dbname=$(database_name)
+test_dsn    = dbi:Pg:dbname=$(database_name)test
 test_user   = [% dbuser %]
 test_passwd = [% dbpass %]
 pg_dump     = 1
