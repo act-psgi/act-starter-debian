@@ -43,7 +43,7 @@ sh ./install_manual.sh
 # From here on, you can:
 # - Run a webserver:
 #    $ . ./config.sh
-#    $ cd $ACTDOCS
+#    $ cd $CHECKOUT/Act
 #    $ plackup
 #
 # - Add a conference from https://github.com/Act-Conferences
