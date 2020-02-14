@@ -1,5 +1,11 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_07 2020-02-14 Adapt to incompatible changes in Act/master
+
+ - Now per default working on the "master" branch
+ - Changes in directory structure for conferences
+ - New config variables
+
 0.00_06 2019-10-07 Switching to act-testing repositories
 
  - The fork has been moved to https://github.com/act-testing/Act.

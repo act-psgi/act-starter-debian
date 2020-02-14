@@ -50,9 +50,8 @@ configured as the name for your conference).
 The Act manual, updated for this fork, is available at
 http://localhost:5000/manual/Manual.html.
 
-_Note:_ There is no content (yet) behind the "homepage"
-http://localhost:5000/ advertised by plackup after its startup.  It just
-returns the default plackup text "Not found".
+_Note:_ There is just a default "not found" page behind the "homepage"
+http://localhost:5000/ advertised by plackup after its startup.
 
 Have fun!
 
@@ -92,8 +91,6 @@ directory and running
   installation actually works.  If it doesn't, then this indicates
   that a) the installation doesn't work, and b) the tests might need
   to be extended.
-* For conferences which use a customized login template, you can't
-  successfully register and login in your local installation.
 
 ## Setup the rest of the system
 
@@ -133,4 +130,3 @@ Restart nginx: `systemd nginx restart`
 ### Mailer: exim
 
 TODO
-
