@@ -48,7 +48,8 @@ mkdir --parents $ACTHOME/var
 
 # Create a conference
 mkdir --parents $ACTHOME/actdocs
-mkdir --parents $ACTHOME/demo
-mkdir --parents $ACTHOME/demo/conf
-cp -r $CHECKOUT/Act/skel/actdocs $ACTHOME/actdocs/demo
-cp -r $CHECKOUT/Act/skel/wwwdocs $ACTHOME/demo/wwwdocs
+mkdir --parents $ACTHOME/conferences
+mkdir --parents $ACTHOME/conferences/demo
+mkdir --parents $ACTHOME/conferences/demo/conf
+cp -r $CHECKOUT/Act/skel/actdocs $ACTHOME/conferences/demo/actdocs
+cp -r $CHECKOUT/Act/skel/wwwdocs $ACTHOME/conferences/demo/wwwdocs

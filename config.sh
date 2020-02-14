@@ -1,6 +1,6 @@
 # Where to get the software from
 export REPOSITORY=https://github.com/act-testing/Act
-export BRANCH=stage1
+export BRANCH=master
 
 # The user running the tests.
 

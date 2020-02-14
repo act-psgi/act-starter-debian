@@ -2,10 +2,13 @@
 conferences = [% conference %]
 cookie_name = act
 searchlimit = 20
-dir_photos  = photos
-dir_ttc     = $(home)/var
 max_imgsize = 320x200
-root        = $(home)
+
+dir_conferences = $(home)/conferences
+dir_static      = $(home)/wwwdocs
+dir_photos      = $(home)/photos
+dir_ttc         = $(home)/var
+root            = $(home)
 
 [database]
 name        = act
@@ -18,28 +21,24 @@ test_passwd = [% dbpass %]
 pg_dump     = 1
 dump_file   = /tmp/dbdump
 
-# Required for waterkip's fork preparing dockerization.
-# They are in the code, but missing from everywhere else.
-# If they aren't defined, there is a warning per request
-# for each variable (A feature of AppConfig).
-# Note that defining 'localhost' as the host name will
-# change the database driver's protocol from "local" to
-# "host".
-version_check = 0
+# Set to 0 in a docker environment
+version_check = 1
+
+# A value of 0 means that Act will use a local connection.
 host = 0
 
 [email]
-sendmail    = /usr/sbin/sendmail
 test        = 0
 sender_address = root@localhost
+hostname = localhost
+port = 25
 
 [wiki]
 dbname      = actwiki
 dbuser      = [% dbuser %]
 dbpass      = [% dbpass %]
 
-# Required for waterkip's fork preparing dockerization,
-# see above for details.
+# A value of 0 means that Act will use a local connection.
 dbhost = 0
 
 [payment]

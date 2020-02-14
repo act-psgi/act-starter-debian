@@ -25,7 +25,7 @@ cd $CHECKOUT/Act
 # doesn't find its t/TestLib.pm.
 export PERL_USE_UNSAFE_INC=1
 
-# This seems to be an undeclared dependency of at keast one of the
+# This seems to be an undeclared dependency of at least one of the
 # modules we need, so make sure we have it in advance
 cpanm Module::Install
 

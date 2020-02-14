@@ -48,6 +48,6 @@ for my $conference (@conferences) {
     }
 
     my $root = "${conference}-${branch}";
-    $zip->extractTree("$root/actdocs","$act_home/actdocs/$conference");
-    $zip->extractTree("$root/wwwdocs","$act_home/$conference/wwwdocs");
+    $zip->extractTree("$root/actdocs","$act_home/conferences/$conference/actdocs");
+    $zip->extractTree("$root/wwwdocs","$act_home/conferences/$conference/wwwdocs");
 }
