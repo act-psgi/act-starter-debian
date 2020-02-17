@@ -17,7 +17,7 @@
 . ./config.sh
 
 if [ ! -z "$LOCALE" ]
-then export DBLOCALE="--locale=$LOCALE"
+then export DBLOCALE="--locale=$LOCALE --template=template0"
 fi
 
 createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER $DBLOCALE act
