@@ -16,9 +16,13 @@
 
 . ./config.sh
 
-createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER act
-createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER acttest
-createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER actwiki
+if [ ! -z "$LOCALE" ]
+then export DBLOCALE="--locale=$LOCALE"
+fi
+
+createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER $DBLOCALE act
+createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER $DBLOCALE acttest
+createdb --username=$DBUSER --encoding=UTF8 --owner=$DBUSER $DBLOCALE actwiki
 
 cd $CHECKOUT/Act
 bin/dbinit | psql -U $DBUSER act
