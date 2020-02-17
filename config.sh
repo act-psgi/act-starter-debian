@@ -26,3 +26,9 @@ export DBPASS=act123
 # Per default, run cpanm without tests (saves several minutes).
 # Comment this out if you want to run the tests.
 export CPANM_NOTEST=--notest
+
+# If the system has a default locale of C or POSIX, you need to
+# provide a unicode-aware alternative for database sorting.
+# Uncomment the next line, or chose your own locale:
+#
+# export LOCALE=en_US.utf8
