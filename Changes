@@ -1,5 +1,7 @@
 Revision history for the toolkit act-starter-debian
 
+0.00_08 2020-02-18 Retire ACTHOME in favor of ACT_HOME
+
 0.00_07 2020-02-14 Adapt to incompatible changes in Act/master
 
  - Now per default working on the "master" branch

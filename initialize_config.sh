@@ -18,12 +18,12 @@
 
 . ./config.sh
 
-mkdir --parents $ACTHOME/conf
+mkdir --parents $ACT_HOME/conf
 
 # You have tpage because you've installed the Perl modules, right?
 tpage --define dbuser="$DBUSER" --define dbpass="$DBPASS" \
       --define conference="demo" \
-      --define acthome="$ACTHOME" \
-      act.ini.tt > $ACTHOME/conf/act.ini
-tpage --define acthome="$ACTHOME" --define actuser="$ACTUSER" \
-      conf.act.ini.tt > $ACTHOME/conferences/demo/actdocs/conf/act.ini
+      --define acthome="$ACT_HOME" \
+      act.ini.tt > $ACT_HOME/conf/act.ini
+tpage --define acthome="$ACT_HOME" --define actuser="$ACT_USER" \
+      conf.act.ini.tt > $ACT_HOME/conferences/demo/actdocs/conf/act.ini

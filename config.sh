@@ -8,16 +8,16 @@ export BRANCH=master
 # Vagrant Debian box), 'ubuntu' (as on a Vagrant Ubuntu box).  Note
 # that the procedures running with root privileges will have "root" as
 # their value for $USER, so we prevent _overwriting_ an existing value
-# for $ACTUSER.
-if [ -z "$ACTUSER" ]
-then export ACTUSER=$USER
+# for $ACT_USER.
+if [ -z "$ACT_USER" ]
+then export ACT_USER=$USER
 fi
 
 # A place for the software.  Git will add /Act to the path.
-export CHECKOUT=/home/$ACTUSER/opt
+export CHECKOUT=/home/$ACT_USER/opt
 
 # A place for the data
-export ACTHOME=/home/$ACTUSER/var/opt/Act
+export ACT_HOME=/home/$ACT_USER/var/opt/Act
 
 # Database user (all databases) and password
 export DBUSER=act

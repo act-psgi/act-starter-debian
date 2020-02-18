@@ -27,7 +27,7 @@ my $url_prefix = 'https://github.com/Act-Conferences';
 my $branch     = 'production';
 my $url_suffix = "archive/${branch}.zip";
 
-my $act_home   = $ENV{ACTHOME};
+my $act_home   = $ENV{ACT_HOME};
 
 
 my @conferences = @ARGV;

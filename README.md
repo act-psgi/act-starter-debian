@@ -26,7 +26,7 @@ Installations created in this way are _not_ meant for production!
 1. Change into the directory of the checkout of act-starter-debian.
 2. Inspect the file config.sh: It sets the parameters which will be
    used throughout the further steps.  You might want to change
-   the values of CHECKOUT and ACTHOME if you are not running a
+   the values of CHECKOUT and ACT_HOME if you are not running a
    debian/stretch64 vagrant box.
 3. For the adventurous: `sh developer_install.sh`.  *Caution:* Some of
    the procedures use sudo for root privileges - vagrant boxes come
