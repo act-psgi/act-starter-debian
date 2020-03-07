@@ -44,11 +44,16 @@ dbhost = 0
 [payment]
 open      = 0
 invoices  = 0
+# Conferences will override this value
 type        = Fake
-notify_bcc  = tester@localhost
 
 [payment_type_Fake]
 plugin = Fake
+notify_bcc  = tester@localhost
+
+[payment_type_Delayed]
+plugin = Delayed
+notify_bcc  = tester@localhost
 
 [flickr]
 # see http://www.flickr.com/services/api/
