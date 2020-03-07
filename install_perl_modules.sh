@@ -27,13 +27,13 @@ export PERL_USE_UNSAFE_INC=1
 
 # This seems to be an undeclared dependency of at least one of the
 # modules we need, so make sure we have it in advance
-cpanm Module::Install
+cpanm $CPANM_SKIP_SATISFIED $CPANM_NOTEST Module::Install
 
 # This will now take a while.
-cpanm $CPANM_NOTEST --installdeps .
+cpanm $CPANM_SKIP_SATISFIED $CPANM_NOTEST --installdeps .
 
 # This isn't a dependency, but we want the tests
-cpanm $CPANM_NOTEST Test::Pod
+cpanm $CPANM_SKIP_SATISFIED $CPANM_NOTEST Test::Pod
 
 # This is for pulling conferences
-cpanm $CPANM_NOTEST Archive::Zip
+cpanm $CPANM_SKIP_SATISFIED $CPANM_NOTEST Archive::Zip

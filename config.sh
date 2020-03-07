@@ -27,6 +27,11 @@ export DBPASS=act123
 # Comment this out if you want to run the tests.
 export CPANM_NOTEST=--notest
 
+# Per default, use packages which are already available
+# Gives speedup if you have lots of Perl packages from debian
+export CPAMN_SKIP_SATISFIED=--skip-satisfied
+
+
 # If the system has a default locale of C or POSIX, you need to
 # provide a unicode-aware alternative for database sorting.
 # Uncomment the next line, or chose your own locale:
